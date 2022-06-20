@@ -1,50 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="theme-color" content="#000">
-	<script type="text/javascript">
-function ajax_get(url, callback) {
-  var xmlhttp = new XMLHttpRequest();
-  xmlhttp.onreadystatechange = function() {
-    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-      console.log('responseText:' + xmlhttp.responseText);
-      try {
-        var data = JSON.parse(xmlhttp.responseText);
-      } catch (err) {
-        console.log(err.message + " in " + xmlhttp.responseText);
-        return;
-      }
-      callback(data);
-    }
-  };
-
-  xmlhttp.open("GET", url, true);
-  xmlhttp.send();
-}
-
-var i;
-for (i = 0; i < 200; i++) {
-  	ajax_get('https://api.thecatapi.com/v1/images/search?size=full', function(data) {
-		var html = data[0]["url"];
-		var container = document.getElementById('pic');
-		var node = new Image();
-		node.setAttribute('src', html);
-		container.appendChild(node);
-		
-	});
-	console.log(i);
-} 
-
-</script>
 </head>
 <body>
-<div id="header">
-	<ul>
-		<li><a href="cats.html">&#10084; Cicike &#10084;</a></li>
-	</ul>
-</div>
-<div id="pic"></div>
+	<h1 class="oswald-600">Lydka je kull</h1>
+    <p class="oswald-300">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, laborum. Labore necessitatibus non voluptate? Doloribus voluptas minus deleniti incidunt, ratione quam sunt est soluta at nulla! Dolor, tempora eos. Facere veniam, eveniet, eius error voluptatem aspernatur similique magni ex aut velit autem! Suscipit autem laborum illum impedit tenetur deserunt facere.</p>
 </body>
 </html>
