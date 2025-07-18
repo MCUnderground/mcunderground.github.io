@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fira Code', monospace;
+  line-height: 1.6;
+  background: #0f0f0f;
+  color: #e0e0e0;
+}
+
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+header {
+  background: linear-gradient(145deg, #232323, #111);
+  padding: 3rem 0;
+  text-align: center;
+  border-bottom: 2px solid #444;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #00ffc3;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #00ffc3;
+}
+
+section {
+  border-bottom: 1px solid #333;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.skill-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.5rem;
+}
+
+.skill-list li {
+  background: #1a1a1a;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid #333;
+}
+
+.project {
+  margin-bottom: 1.5rem;
+}
+
+.project h3 a {
+  color: #00ffc3;
+  text-decoration: none;
+}
+
+.project p {
+  color: #ccc;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.9rem;
+  color: #666;
+  background: #111;
+}
